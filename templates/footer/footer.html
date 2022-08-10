@@ -1,0 +1,27 @@
+
+
+<script src='{{url_for("static",filename="extensions/jquery.min.js")}}'></script>
+<script src='{{url_for("static",filename="extensions/bootstrap.min.js")}}'></script>
+<script src='{{url_for("static",filename="extensions/bootstrap-toggle.min.js")}}'></script>
+<script src='{{url_for("static",filename="extensions/prism.js")}}'></script>
+<script>
+	document.createElement('section');
+  	var duration = 500, easing = 'swing';
+</script>
+<script>
+
+  jQuery('.collapse-inner-button').on('click', function(){
+
+        var div_value = jQuery(this).attr("data-id");
+
+        jQuery('#summary_div_'+div_value).toggle();
+        jQuery(this).toggleClass('collapse-inner-toggle');
+
+
+  });
+
+</script>
+<script src='{{url_for("static",filename="extensions/script.js")}}'></script>
+
+</body>
+</html>

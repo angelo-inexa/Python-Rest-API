@@ -1,0 +1,287 @@
+{% include 'header/header.html' %}
+
+
+
+
+<div class="content" id="pixxett-ui">
+<div class="container">
+<div class="row">
+
+<div class="page-header">
+	<h1 class="title">API Santé Sénégal</h1>
+	<div class="discription">
+		<span class="active">Donnée rélévant du domaine medical comportant 14 regions et 11 etiquettes qui sont:</span>
+		<span>
+			<b>Nom de la région, taux d'enfant en sous poids, etc...</b>
+		</span>
+	</div>
+</div>
+
+
+<div class="container-widget pixxett-ui">
+<div>
+<div id="documenter_content" class="method-area-wrapper">
+
+	<div class="scheme-container">
+		<section class="schemes wrapper block col-12">
+		<label>
+			<span class="schemes-title">Type de requete</span>
+			<select><option value="http">http</option></select>
+		</label><div class="auth-wrapper">
+		<a href="/getKey" class="btn authorize unlocked">
+			<span>API Key</span>
+		</a>
+		</div>
+		</section>
+	</div>
+
+
+	<div class="method">
+	<div class="method-area">
+	<div class="wrapper">
+		<section class="block col-12 block-desktop col-12-desktop">
+			<div>
+				<div class="opblock-tag-section is-open">
+
+					<h4 class="opblock-tag collapse-button" data-toggle="collapse" data-target="#main-collaps1">
+						<span>Documentation</small>
+						<button class="collapse-button" data-toggle="collapse" data-target="#main-collaps1"></button>
+					</h4>
+
+
+					<div id="main-collaps1" class="collapse opblock opblock-post opblock-post-wrapper">
+
+
+						<!-- REQUEST GET : INFO POUR TOUTES LES REGIONS -->
+						<div class="opblock opblock-get">
+							<div class="opblock-summary opblock-summary-get collapse-inner-button" data-id="2-3">
+								<span class="opblock-summary-method">GET</span>
+								<span class="opblock-summary-path">
+									<span style="font-size: 12px;">http://localhost:5000/datasante/api/v0.1/apikey=XkoesDjmK25mlHJGQu3YZe1o0UymnGN4c3HkUWoYYCD7JCFv5mQrUG/regions</span>
+								</span>
+								<div class="opblock-summary-description" style="font-size: 10px;">Info pour toutes les regions</div>
+								<button class="collapse-inner-button" data-id="2-3"></button>
+							</div>
+							<div id="summary_div_2-3" style="display: none">
+								<div>
+									<div style="height: auto; border: none; margin: 0px; padding: 0px;">
+										<div class="opblock-body">
+
+											<div class="opblock-section">
+												<div class="opblock-section-header">
+													<h4 class="opblock-title">Parameters</h4>
+												</div>
+												<div>
+													<img src='{{url_for("static",filename="img/get_all.png")}}' class="img_sortie">
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- REQUEST GET: POUR UNE REGION TOUTES LES DONNEES -->
+						<div class="opblock opblock-get">
+							<div class="opblock-summary opblock-summary-get collapse-inner-button" data-id="2-5">
+								<span class="opblock-summary-method">GET</span>
+								<span class="opblock-summary-path">
+									<span style="font-size: 12px;">http://localhost:5000/datasante/api/v0.1/apikey=XkoesDjmK25mlHJGQu3YZe1o0UymnGN4c3HkUWoYYCD7JCFv5mQrUG/region/Dakar</span>
+								</span>
+								<div class="opblock-summary-description" style="font-size: 10px;">Une region, les variables</div>
+								<button class="collapse-inner-button" data-id="2-5"></button>
+							</div>
+							<div id="summary_div_2-5" style="display: none">
+								<div>
+									<div style="height: auto; border: none; margin: 0px; padding: 0px;">
+										<div class="opblock-body">
+
+											<div class="opblock-section">
+												<div class="opblock-section-header">
+													<h4 class="opblock-title">Parameters</h4>
+												</div>
+												<div>
+													<img src='{{url_for("static",filename="img/region_variables.png")}}' class="img_sortie">
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- REQUEST GET: POUR UNE REGION ET POUR UNE CATACTERISTIQUE -->
+						<div class="opblock opblock-get">
+							<div class="opblock-summary opblock-summary-get collapse-inner-button" data-id="2-7">
+								<span class="opblock-summary-method">GET</span>
+								<span class="opblock-summary-path">
+									<span style="font-size: 12px;">http://localhost:5000/datasante/api/v0.1/apikey=XkoesDjmK25mlHJGQu3YZe1o0UymnGN4c3HkUWoYYCD7JCFv5mQrUG/Dakar/t_m5</span>
+								</span>
+								<div class="opblock-summary-description" style="font-size: 10px;">Une region, une variable</div>
+								<button class="collapse-inner-button" data-id="2-7"></button>
+							</div>
+							<div id="summary_div_2-7" style="display: none">
+								<div>
+									<div style="height: auto; border: none; margin: 0px; padding: 0px;">
+										<div class="opblock-body">
+
+											<div class="opblock-section">
+												<div class="opblock-section-header">
+													<h4 class="opblock-title">Parameters</h4>
+												</div>
+												<div>
+													<img src='{{url_for("static",filename="img/region_variable.png")}}' class="img_sortie">
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- REQUEST GET: RECHERCHE PAR CARACTERISTIQUE (5 elements)-->
+						<div class="opblock opblock-get">
+							<div class="opblock-summary opblock-summary-get collapse-inner-button" data-id="2-6">
+								<span class="opblock-summary-method">GET</span>
+								<span class="opblock-summary-path">
+									<span style="font-size: 12px;">http://localhost:5000/datasante/api/v0.1/apikey=XkoesDjmK25mlHJGQu3YZe1o0UymnGN4c3HkUWoYYCD7JCFv5mQrUG/variables/t_m5</span>
+								</span>
+								<div class="opblock-summary-description" style="font-size: 10px;">Recherche par variables</div>
+								<button class="collapse-inner-button" data-id="2-6"></button>
+							</div>
+							<div id="summary_div_2-6" style="display: none">
+								<div>
+									<div style="height: auto; border: none; margin: 0px; padding: 0px;">
+										<div class="opblock-body">
+
+											<div class="opblock-section">
+												<div class="opblock-section-header">
+													<h4 class="opblock-title">Parameters</h4>
+												</div>
+												<div>
+													<img src='{{url_for("static",filename="img/variable.png")}}' class="img_sortie">
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- REQUEST POST: AJOUTER UNE REGION ET SES CARACTERISTIQUES -->
+						<div class="opblock opblock-post collapse-inner-button" data-id="2-1">
+							<div class="opblock-summary opblock-summary-post">
+								<span class="opblock-summary-method">POST</span>
+								<span class="opblock-summary-path">
+									<span style="font-size: 12px;">http://localhost:5000/datasante/api/v0.1/apikey=XkoesDjmK25mlHJGQu3YZe1o0UymnGN4c3HkUWoYYCD7JCFv5mQrUG/regions</span>
+								</span>
+								<div class="opblock-summary-description" style="font-size: 10px;">Ajout Regions & variables</div>
+								<button class="collapse-inner-button" data-id="2-1"></button>
+							</div>
+							<div id="summary_div_2-1" style="display: none">
+							<div>
+							<div style="height: auto; border: none; margin: 0px; padding: 0px;">
+							<div class="opblock-body">
+								<div class="opblock-section">
+									<div class="opblock-section-header">
+										<h4 class="opblock-title">Parameters</h4>
+									</div>
+									<div>
+										<img src='{{url_for("static",filename="img/post.png")}}' class="img_sortie">
+									</div>
+								</div>
+							
+							</div>
+							</div>
+							</div>
+							</div>
+						</div>
+
+
+						<!-- REQUEST PUT: MODIFIER UNE REGION ET SES CARACTERISTIQUES CONNAISSANT LE ID -->
+						<div class="opblock opblock-put">
+							<div class="opblock-summary opblock-summary-put collapse-inner-button" data-id="2-2">
+								<span class="opblock-summary-method">PUT</span>
+								<span class="opblock-summary-path">
+									<span style="font-size: 12px;">http://localhost:5000/datasante/api/v0.1/apikey=XkoesDjmK25mlHJGQu3YZe1o0UymnGN4c3HkUWoYYCD7JCFv5mQrUG/regions/2</span>
+								</span>
+								<div class="opblock-summary-description" style="font-size: 10px;">Modifier region(id)</div>
+								<button class="collapse-inner-button" data-id="2-2"></button>
+							</div>
+							<div id="summary_div_2-2" style="display: none">
+								<div>
+									<div style="height: auto; border: none; margin: 0px; padding: 0px;">
+										<div class="opblock-body">
+											<div class="opblock-section">
+												<div class="opblock-section-header">
+													<h4 class="opblock-title">Parameters</h4>
+												</div>
+												<div>
+													<img src='{{url_for("static",filename="img/put.png")}}' class="img_sortie">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- REQUEST DELETE: SUPPRIMER UNE REGION -->
+						<div class="opblock opblock-delete">
+							<div class="opblock-summary opblock-summary-delete collapse-inner-button" data-id="2-4">
+								<span class="opblock-summary-method">DELETE</span>
+								<span class="opblock-summary-path">
+									<span style="font-size: 12px;">http://localhost:5000/datasante/api/v0.1/apikey=XkoesDjmK25mlHJGQu3YZe1o0UymnGN4c3HkUWoYYCD7JCFv5mQrUG/region/1</span>
+								</span>
+								<div class="opblock-summary-description" style="font-size: 10px;">Supprimer une region(id)</div>
+								<button class="collapse-inner-button" data-id="2-4"></button>
+							</div>
+							<div id="summary_div_2-4" style="display: none">
+								<div>
+									<div style="height: auto; border: none; margin: 0px; padding: 0px;">
+										<div class="opblock-body">	
+											<div class="opblock-section">
+												<div class="opblock-section-header">
+													<h4 class="opblock-title">Parameters</h4>
+												</div>		
+												<div>
+													<img src='{{url_for("static",filename="img/delete.png")}}' class="img_sortie">
+												</div>				
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	</div>
+	</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+{% include 'footer/footer.html' %}
+

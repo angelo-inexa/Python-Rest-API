@@ -1,7 +1,7 @@
 # API REST 
 
-Ceci est un projet de création d'une API Rest en python  
-qui inclut en soit la génération d'un token .
+Ceci est un projet de création d'une API qui a pour but d'analyser le taux de mortalité infantile, de paludisme et alphabétisation dans les différente région du sénégal
+
 
 # Requirments
 * Python 3+
